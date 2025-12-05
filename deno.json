@@ -3,7 +3,8 @@
     "day-1": "deno run --allow-read --watch day-1/main.ts",
     "day-2": "deno run --allow-read --watch day-2/main.ts",
     "day-3": "deno run --allow-read --watch day-3/main.ts",
-    "day-4": "deno run --allow-read --watch day-4/main.ts"
+    "day-4": "deno run --allow-read --watch day-4/main.ts",
+    "day-5": "deno run --allow-read --watch day-5/main.ts"
   },
   "imports": {
     "@std/assert": "jsr:@std/assert@1"
