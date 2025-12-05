@@ -1,12 +1,5 @@
 import { readFile } from "../utils.ts";
 
-interface RangeNode {
-  min: number;
-  max: number;
-  left: RangeNode | null;
-  right: RangeNode | null;
-}
-
 function part1(input: string): number {
   const [fresh, available] = input.split("\n\n").map((text, idx) =>
     idx === 0
