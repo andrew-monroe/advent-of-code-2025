@@ -3,9 +3,7 @@ import { readFile } from "../utils.ts";
 function part1(input: string): number {
   const [fresh, available] = input.split("\n\n").map((text, idx) =>
     idx === 0
-      ? text.split("\n").map((range) => {
-        return range.split("-").map(Number);
-      })
+      ? text.split("\n").map((range) => range.split("-").map(Number))
       : text.split("\n").map(Number)
   ) as [number[][], number[]];
 
@@ -30,9 +28,9 @@ function part1(input: string): number {
 }
 
 function part2(input: string): number {
-  const fresh = input.split("\n\n")[0].split("\n").map((range) => {
-    return range.split("-").map(Number);
-  });
+  const fresh = input.split("\n\n")[0].split("\n").map((range) =>
+    range.split("-").map(Number)
+  );
 
   fresh.sort((a, b) => a[0] - b[0]);
 
