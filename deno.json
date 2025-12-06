@@ -1,4 +1,7 @@
 {
+  "fmt": {
+    "exclude": ["**/README.md"]
+  },
   "tasks": {
     "day-1": "deno run --allow-read --watch day-1/main.ts",
     "day-2": "deno run --allow-read --watch day-2/main.ts",
