@@ -33,6 +33,7 @@ function getNums(inputRows: string[], colIdxStart: number, width: number) {
 function part2(input: string): number {
   const inputRows = input.split("\n");
 
+  // Format: [op, numDigitsForColumn]
   const operators = inputRows.pop()!.split(/\s/).reduce((acc, cur) => {
     if (cur.length) {
       acc.push([cur, 1]);
